@@ -1,0 +1,9 @@
+wheel-container {
+    width: 3rem;
+    height: 9rem;
+}
+
+wheel-rect {
+    color: aquamarine;
+    border-radius: 0.625rem;
+}
