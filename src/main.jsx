@@ -6,7 +6,6 @@ import Wheel from './components/Wheel.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
-    <Wheel />
+    <App />
   </StrictMode>,
 )
