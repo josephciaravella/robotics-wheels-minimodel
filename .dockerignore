@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+Dockerfile
+eslint.config.js
+README.md
+vite.config.js
+.dockerignore
+.git
+.gitignore
+.env
