@@ -1,10 +1,14 @@
 import React from "react"
 import Wheel from "./components/Wheel"
+import "./css/index.css"
 
 function App() {
   return (
-    <div>
-      <Wheel />
+    <div className="wheel-grid">
+      <div className="cell"><Wheel /></div>
+      <div className="cell"><Wheel /></div>
+      <div className="cell"><Wheel /></div>
+      <div className="cell"><Wheel /></div>
     </div>
   )
 }

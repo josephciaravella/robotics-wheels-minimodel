@@ -1,0 +1,13 @@
+.wheel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 50vw;
+    height: 50vw;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
