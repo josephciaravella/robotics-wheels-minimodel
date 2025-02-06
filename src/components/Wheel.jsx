@@ -1,45 +1,24 @@
-import React, { useEffect } from "react";
+import React from 'react'
 
 import "../css/Wheel.css"
 
-export default function Wheel() {
+export default function Wheel({ angle = 45, speed = 0 }) {
     
-    const [wheel, setWheel] = React.useState({
-        angle: 0,
-        speed: 0
-    })
 
-
-    function generateNewValues() {
-        const newSpeed = Math.floor(Math.random() * 21) 
-        const newAngle = Math.floor(Math.random() * 91)
-        return { newSpeed, newAngle }
-    }
-
-    function handleClick() {
-        const { newSpeed, newAngle } = generateNewValues()
-        setWheel(() => {
-            return {
-                angle: newAngle,
-                speed: newSpeed
-            }
-        })
-    }
 
     return(
         <div className="wheel-container">
-            <div className="wheel-size" style={{transform: `rotate(${-45 + wheel.angle}deg)`}}>
+            <div className="wheel-size" style={{transform: `rotate(${-45 + angle}deg)`}}>
                 <div className="direction-arrow">
                 </div>
                 <svg>
                     <rect className="wheel-rect" />
                 </svg>
             </div>
-            <div>
-                <button onClick={handleClick}>Generate new Values</button>
+            <div className="stats">
                 <ul>
-                    <li>New Angle: {wheel.angle}</li>
-                    <li>New Speed: {wheel.speed}</li>
+                    <li>New Angle: {angle-45}</li>
+                    <li>New Speed: {speed}</li>
                 </ul>
             </div>
         </div>

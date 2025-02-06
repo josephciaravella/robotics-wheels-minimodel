@@ -5,13 +5,9 @@ import "./css/index.css"
 
 function App() {
   return (
-    // <div className="test">
-    <div style={"border: 2px solid black"}>
-      <p>Test</p>
-      {/* <Container /> */}
+    <div className="test">
+      <Container />
     </div>
-    // <Wheel />
-    // <Container />
   )
 }
 
